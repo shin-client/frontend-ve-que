@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #2f57ef;
+  --xam: #e6e3f1;
+  --xam-dam: #6b7385;
+  --trang: #fff;
+  --xanh-la: #3eb75e;
+  --xanh-nhat: #96d5fe;
+  --cam: #ffab19;
+}
+
+/* câu 1 */
+.icon-btn {
+  padding-left: 8px;
+}
+.btn {
+  font-size: 14px;
+  padding: 16px 30px;
+  font-weight: 600;
+  border: 2px solid var(--xam);
+  background-color: #fff;
+}
+.btn:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: var(--trang);
+}
+.btn-radius-8 {
+  border-radius: 8px;
+}
+.btn-radius-50 {
+  border-radius: 50px;
+}
+
+/* câu 2 */
+.btn2 {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--xam);
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: var(--trang);
+}
+.btn-blue,
+.btn2:hover {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: var(--trang);
+}
+.btn-green {
+  border-color: #7ba001;
+  background-color: #7ba001;
+  color: var(--trang);
+}
+.btn-green:hover {
+  background-color: #607d00;
+  border-color: #607d00;
+}
+
+/* câu 3 */
+.btn3 {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--xam-dam);
+}
+.btn3:hover {
+  background-color: var(--blue);
+  color: var(--trang);
+}
+
+/* câu 4 */
+.btn4 {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  color: var(--xam-dam);
+}
+.btn4:hover {
+  background-color: var(--blue);
+  color: var(--trang);
+}
+.btn4.active {
+  background-color: var(--blue);
+  color: var(--trang);
+}
+
+/* câu 5 */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu > li {
+  margin-bottom: 8px;
+}
+.menu li::before {
+  content: "\f058";
+  color: var(--xanh-la);
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* câu 6 */
+.table6 .th6,
+.table6 .td6 {
+  padding: 10px 20px;
+}
+.table6 .th6 {
+  background-color: var(--xanh-nhat);
+}
+.table6 .td6 {
+  border-bottom: 1px solid var(--xam);
+}
+
+/* câu 7 */
+.table7,
+.th7,
+.td7 {
+  border: 1px solid var(--xam);
+  border-collapse: collapse;
+}
+.table7 .th7,
+.table7 .td7 {
+  padding: 10px 20px;
+}
+.th7 {
+  background-color: var(--cam);
+}
+.tr7.active {
+  background-color: #f6f6f6;
+}
+.tr7:hover {
+  background-color: #ececec;
+}
+
+/* câu 8 */
+section {
+  background-color: #f9f9ff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 80px 0 80px 0;
+  text-align: center;
+  font-size: 30px;
+}
+.title,
+.item {
+  color: #192335;
+}
+.item {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 40px;
+}
+.item-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+.item:hover {
+  color: #2f57ef;
+}
+.thumnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #000;
+  border-radius: 50%;
+}
+.item:hover .thumnail {
+  border-color: #2f57ef;
+}
+
+/* câu 9 */
+.title9,
+.item9 {
+  color: #192335;
+}
+.item9 {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+}
+.item-title9 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+.item9:hover {
+  color: #2f57ef;
+}
+.thumnail9 {
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.sub-title {
+  font-size: 14px;
+  color: #6b7385;
+  margin: 0;
+}

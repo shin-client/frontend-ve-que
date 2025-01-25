@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký thành viên</title>
+  </head>
+  <body>
+    <h1>Đăng ký Thành viên</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="get" target="_blank">
+      <table border="1" cellspacing="0" cellpadding="10px">
+        <tbody>
+          <tr>
+            <td width="100px"><label for="full-name">Họ tên:</label></td>
+            <td>
+              <input type="text" name="full-name" id="full-name" placeholder="Vui lòng nhập Họ tên" title="Vui lòng viết hoa toàn bộ" autofocus required>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="u-password">Mật khẩu:</label></td>
+            <td>
+              <input type="password" name="u-password" id="u-password" placeholder="Vui lòng nhập Mật khẩu" maxlength="32" required>
+            </td>
+          </tr>
+          <tr>
+            <td>Giới tính:</td>
+            <td>
+              <input type="radio" name="sex" id="male" value="male">
+              <label for="male">Nam</label>
+              <input type="radio" name="sex" id="female" value="female">
+              <label for="female">Nữ</label>
+              <input type="radio" name="sex" id="other" value="other">
+              <label for="other">Không công bố</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Sở thích:</td>
+            <td>
+              <input type="checkbox" name="interest" id="watch-movie" value="watch-movie">
+              <label for="watch-movie">Xem phim</label>
+              <br>
+              <input type="checkbox" name="interest" id="reading-book" value="reading-book">
+              <label for="reading-book">Đọc sách</label>
+              <br>
+              <input type="checkbox" name="interest" id="listening-music" value="listening-music">
+              <label for="listening-music">Nghe nhạc</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Tuổi:</label></td>
+            <td>
+              <input type="number" name="age" id="age" min="10" max="40" title="Độ tuổi từ 10 đến 40" required>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="keyword">Từ khoá tìm kiếm:</label></td>
+            <td>
+              <input type="search" name="keyword" id="keyword" value="tu khoa">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="introduce">Giới thiệu bản thân:</label></td>
+            <td>
+              <textarea name="introduce" id="introduce" rows="10" cols="70">Xin chào, tôi tên Ngọc...</textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="u-email">Email có thể liên hệ:</label></td>
+            <td>
+              <input type="email" name="u-email" id="u-email" required>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="u-website">Địa chỉ web của bạn:</label></td>
+            <td>
+              <input type="url" name="u-website" id="u-website">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="u-phone-number">Số điện thoại:</label></td>
+            <td>
+              <input type="tel" name="u-phone-number" id="u-phone-number" maxlength="10" title="Vui lòng nhập SĐT của bạn" required>
+            </td>
+          </tr>
+          <tr>
+            <td>Các loại chọn Thời gian</td>
+            <td>
+              <h3>Ngày tháng</h3>
+              <label for="select-date">Chọn ngày: </label>
+              <input type="date" name="select-date" id="select-date" min="2000-01-01">
+              <br>
+              <label for="select-month">Chọn tháng: </label>
+              <input type="month" name="select-month" id="select-month">
+              <br>
+              <label for="select-week">Chọn tuần: </label>
+              <input type="week" name="select-week" id="select-week">
+              <h3>Giờ</h3>
+              <label for="select-time">Chọn Giờ: </label>
+              <input type="time" name="select-time" id="select-time">
+              <br>
+              <label for="">Chọn Ngày + Giờ: </label>
+              <input type="datetime-local" name="select-datetime-local" id="select-datetime-local">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="u-color">Màu yêu thích:</label></td>
+            <td>
+              <input type="color" name="u-color" id="u-color">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="u-province">Bạn đang sinh sống ở TP/Tỉnh nào?</label></td>
+            <td>
+              <input type="text" name="u-province" id="u-province" list="province-list" required>
+              <datalist id="province-list">
+                <option value="Vũng Tàu">VT</option>
+                <option value="Hồ Chí Minh">HCM</option>
+                <option value="Đồng Nai">ĐN</option>
+                <option value="Tiền Giang">TG</option>
+                <option value="Phú Thọ">PT</option>
+                <option value="Hà Nội">HN</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Các ví dụ đo lường</td>
+            <td>
+              <p>
+                Dung lượng ổ C:
+                <meter id="disk-c" value="300" min="0" max="1000" low="200" optimum="500" high="700"></meter>
+                200MB trong 1GB
+              </p>
+              <p>
+                Bạn đã được điểm (B)
+                <meter id="score" value="85" min="0" max="100"></meter>
+                trong kỳ thi vừa Thiết kế Web.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Các ví dụ tiến trình</td>
+            <td>
+              <p>
+                Quá trình download file đã được: 
+                <progress id="download-progress" value="35" max="100"></progress>
+                35%
+              </p>
+              <p>
+                Đang xử lý: 
+                <progress></progress>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Âm lượng</td>
+            <td>
+              <input type="range" name="volume" id="volume">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" id="register" value="Đăng ký">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

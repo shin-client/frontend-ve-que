@@ -2,9 +2,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Câu 13 | Bài tập bài 4 + 5</title>
 </head>
 <body>
-  
+  <h2>Câu 13: Counter (Các chỉ số)</h2>
+  <p><b>Yêu cầu</b>: Sử dụng HTML và CSS để dựng khối bên dưới (Dùng kiểu hiển thị inline-block, dùng font Be Vietnam Pro).</p>
+  <div class="login-form general-form">
+    <h1 class="title-13">Login</h1>
+    <form class="login" action="" method="post">
+      <input class="inp-u" type="email" name="u-email" id="u-email" placeholder="Email" required>
+      <input class="inp-u" type="password" name="u-pw" id="u-pw" placeholder="Password" required>
+      <input class="m-pointer" type="checkbox" name="remember-choose" id="remember-choose">
+      <label class="m-pointer" for="remember-choose">Remember me</label>
+      <input class="submit-btn m-pointer" type="submit" name="login" id="send-login" value="Login">
+    </form>
+  </div>
+  <div class="register-form general-form">
+    <h1 class="title-13">Register</h1>
+    <form class="login" action="" method="post">
+      <input class="inp-u" type="text" name="u-fullname" id="u-fullname" placeholder="Full Name" required>
+      <input class="inp-u" type="email" name="u-email" id="u-email" placeholder="Email" required>
+      <input class="inp-u" type="password" name="u-pw" id="u-pw" placeholder="Password" required>
+      <input class="m-pointer" type="checkbox" name="agree_to_terms" id="accept-terms-checkbox" required>
+      <label class="m-pointer" for="accept-terms-checkbox"> I read & agree the terms & conditions.</label>
+      <input class="submit-btn m-pointer" type="submit" name="register" id="send-register" value="Register">
+    </form>
+  </div>
 </body>
 </html>

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -8,6 +10,7 @@
   --xam: #e6e3f1;
   --xam-dam: #6b7385;
   --trang-xam: #ebebeb;
+  --trang-nhat: #eeeeee;
   --trang: #fff;
   --xanh-la: #3eb75e;
   --xanh-nhat: #96d5fe;
@@ -15,6 +18,8 @@
   --den: #000;
   --den-nhat: #192335;
   --xanh-sieu-nhat: #cfe8ff;
+  --tim-dam: #231F40;
+  --tim: #525fe1;
 }
 
 .bg-yellow {
@@ -316,4 +321,77 @@ section {
 .sub-item-title-more::after {
   content: "";
   padding-right: 10px;
+}
+
+/* câu 12 */
+.section {
+  background-image: url(../images/cau-12/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 120px 0 120px 0;
+}
+.box {
+  display: inline-block;
+  color: var(--trang);
+  border-right: 1px solid var(--trang);
+  padding: 0 40px 0 40px;
+}
+.count-text {
+  font-size: 48px;
+  padding: 0;
+  margin:0 0 15px 0;
+}
+.box:last-child {
+  border: none;
+}
+.title12 {
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* câu 13 */
+.general-form {
+  font-family: "Be Vietnam Pro", sans-serif;
+  border: 1px solid var(--trang-nhat);
+  width: 550px;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 20px 0 20px 30px;
+}
+.title-13 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: var(--den-nhat)
+}
+.inp-u {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  padding: 30px;
+  margin-bottom: 34px;
+  border: none;
+  outline: none;
+  background-color: var(--trang-xam);
+  border-radius: 10px;
+}
+.submit-btn {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--trang);
+  background-color: var(--tim);
+}
+.submit-btn:hover {
+  background-color: var(--tim-dam);
+}
+.m-pointer {
+  cursor: pointer;
 }

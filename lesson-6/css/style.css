@@ -1,0 +1,38 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+:root {
+  --gray-1: #192335;
+  --xam: #e6e3f1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  width: 118rem;
+  margin: 0 auto;
+}
+.title {
+  font-size: 4.2rem;
+  text-align: center;
+  color: var(--gray-1);
+  margin: 0 0 3.4rem 0;
+}
+.logo-brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--xam);
+}
+.logo {
+  width: 25%;
+  padding: 3rem;
+  border: 1px solid var(--xam);
+}
+.logo img {
+  width: 100%;
+  height: 30px;
+  object-fit: contain;
+}

@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red-1: #f74848;
+  --yellow-1: #fca727;
+  --green-1: #98f05d;
+  --blue-1: #2f84c9;
+  --white: #fff;
+}
+.clear-fix {
+  clear: both;
+}
+html {
+  font-size: 10px;
+  text-align: center;
+}
+.header, .footer {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+.header {
+  background-color: var(--red-1);
+}
+.footer {
+  background-color: var(--blue-1);
+}
+.left, .right {
+  width: 25%;
+  height: 20rem;
+  background-color: var(--yellow-1);
+  float: left;
+}
+.left, .right, .main {
+  padding-top: 1rem;
+}
+.main {
+  width: 50%;
+  height: 20rem;
+  float: left;
+  background-color: var(--white);
+}
+.right {
+  background-color: var(--green-1);
+  float: right;
+}
+
+@media (max-width: 64rem) {
+  .section {
+    position: relative;
+  }
+  .left, .right, .main {
+    height: 10rem;
+  }
+  .main {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .left, .right {
+    width: 50%;
+    z-index: 1;
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .section {
+    position: relative;
+  }
+  .left, .right, .main {
+    width: 100%;
+    height: 4rem;
+    z-index: 1;
+    padding: 1rem;
+    margin: 0;
+  }
+  .main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .left{
+    margin-top: 4rem;
+  }
+
+}

@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  --pur-1: #8598cc;
+  --blue-1: #00aeef;
+  --black: #000;
+  --white: #fff;
+  --gray-1: #848687;
+}
+html {
+  font-size: 10px;
+}
+.main {
+  text-align: center;
+}
+.box {
+  position: relative;
+  left: calc(50% - (19rem / 2));
+  width: 19rem;
+  height: 5rem;
+  background-color: var(--pur-1);
+  color: var(--white);
+  font-size: 2rem;
+  padding: 0.7rem;
+}
+.title {
+  font-size: 2.5rem;
+  margin: 2rem 0 2rem 0;
+  font-weight: 300;
+}
+.title span {
+  color: var(--blue-1);
+}
+.sub-title {
+  color: var(--gray-1);
+  margin-bottom: 2.5rem;
+}
+.view-plan-btn, .all-fea-btn {
+  width: 16.2rem;
+  height: 5.2rem;
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 0.5rem;
+  margin-right: 1.2rem;
+}

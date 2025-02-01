@@ -4,6 +4,7 @@
 :root {
   --blue: #2f57ef;
   --xam: #e6e3f1;
+  --xam-2: #eff1ff;
   --xam-dam: #6b7385;
   --trang-xam: #ebebeb;
   --trang-nhat: #eeeeee;
@@ -17,6 +18,9 @@
   --xanh-sieu-nhat: #cfe8ff;
   --tim-dam: #231F40;
   --tim: #525fe1;
+  --tim-2: #b966e7;
+  --tim-3: #a04ecd;
+  --tim-4: #e8dffc;
 }
 * {
   box-sizing: border-box;
@@ -186,4 +190,84 @@ a {
 }
 .inner-title-3 a:hover, .inner-button-3:hover {
   color: var(--blue);
+}
+
+/* cau 4 */
+.section-4 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--xam-2);
+}
+.container-4 {
+  max-width: 118rem;
+  margin: 0 auto;
+}
+.news-letter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 5rem;
+  position: relative;
+}
+.news-letter::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/cau-4/dots.svg);
+}
+.content-4 {
+  width: 50%;
+}
+.update-4 {
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: var(--tim-2);
+  background-color: var(--tim-4);
+}
+.title-4 {
+  font-size: 3rem;
+}
+.text-4 {
+  font-size: 12px;
+  color: var(--xam-dam);
+}
+.form-4 {
+  width: 45%;
+  background: var(--trang);
+  border: 0.1rem solid var(--trang-nhat);
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+#u-email {
+  font-size: 14px;
+  height: 50px;
+  color: var(--xam-dam);
+  background: var(--trang);
+  flex: 1;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+}
+#sub-btn {
+  font-size: 14px;
+  font-weight: 600;
+  height: 50px;
+  padding: 0 20px;
+  color: var(--trang);
+  background-color: var(--tim-2);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#sub-btn:hover {
+  background-color: var(--tim-3);
 }

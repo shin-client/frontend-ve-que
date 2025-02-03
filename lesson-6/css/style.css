@@ -12,6 +12,7 @@
   --trang-2: #F9F9FF;
   --xanh-la: #3eb75e;
   --xanh-nhat: #96d5fe;
+  --xanh-1: #2F57EF;
   --cam: #ffab19;
   --den: #000;
   --den-nhat: #192335;
@@ -29,6 +30,16 @@
 }
 html {
   font-size: 10px;
+}
+
+.margin-tb20 {
+  margin: 2rem 0;
+}
+.margin-r5 {
+  margin-right: .5rem;
+}
+.margin-lr10 {
+  margin: 0 1rem;
 }
 
 /* cau 1 */
@@ -270,4 +281,72 @@ a {
 }
 #sub-btn:hover {
   background-color: var(--tim-3);
+}
+
+/* cau 5 */
+.section-5 {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.container-5 {
+  max-width: 118rem;
+  margin: 0 auto;
+}
+.title-5 {
+  font-size: 4.8rem;
+  text-align: center;
+  color: var(--den-nhat);
+  margin: 0 0 3.4rem 0;
+}
+.member-list {
+  margin: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.member {
+  width: calc(33.333% - 20px);
+  border: .1rem solid var(--xam);
+  border-radius: 1rem;
+  margin-top: 7.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.avatar {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border: 0.6rem solid var(--xam);
+  border-radius: 50%;
+  margin: -7.5rem auto auto auto;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.content-5 {
+  padding: 0 2rem;
+}
+.fullname {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+.educational-level {
+  font-size: 1.4rem;
+  color: var(--xanh-1);
+}
+.address, .bio, .social-list i {
+  font-size: 1.3rem;
+  color: var(--xam-dam);
+}
+.bio {
+  font-size: 1.6rem;
+}
+.social-list i {
+  font-size: 1.8rem;
+}
+.social-list i:hover {
+  color: var(--xanh-1);
 }
